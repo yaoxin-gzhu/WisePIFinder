@@ -1,6 +1,6 @@
-# Cuckoo_Counter Top-k
+# WisePIFinder
 
-Cuckoo Counter is adaptive to finding Top-k elephant flows. There are also several well-known algorithms, including Lossy Counting, Space-Saving, Augmented Sketch, Heavy Keeper,  etc. Experimental results show that our Cuckoo Counter achieves high precision in finding Top-k elephant flows. 
+We propose a novel sketch algorithm called WisePIFinder, which aims to detect PI flows more accurately and efficiently in realtime. 
 
 # How to run
 
@@ -10,14 +10,13 @@ You just need:
 
 ```
 $ make
-$ ./cuckoo (-d dataset -m memory -k k)
+$ ./WisePIFinder (-d dataset -m memory -k k)
 ```
 
 **optional** arguments:
 
 - -d: set the path of dataset to run, default dataset is CAIDA "1.dat"
-- -m: set the memory size (KB), default memory is 400KB
-- -k: set the number of top flows, default **k** is 1000 
+- -m: set the memory size (KB), default memory is 100KB
 
 # Output format
 
